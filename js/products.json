@@ -1,0 +1,44 @@
+{
+  "items":[
+    { "name": "Heat Sauce",
+      "price": "9.99",
+      "img": "img/merch/heat-sauce.jpg",
+      "description": "Some like it hot and Dean’s “Dead Heat” is the most outrageous of hot sauces! Not for the faint of heart. You’ve been warned!"
+    },
+    { "name": "Jalapeno Sauce",
+      "price": "9.99",
+      "img": "img/merch/jalapeno-sauce.jpg",
+      "description": "Everyone loves Dean’s specialty sauces and now they’re available right from our Cantina!"
+    },
+    { "name": "Chipotle Sauce",
+      "price": "9.99",
+      "img": "img/merch/chipotle-sauce.jpg",
+      "description": "Everyone loves Dean’s specialty sauces and now they’re available right from our Cantina!"
+    },
+    { "name": "Cayenne Sauce",
+      "price": "9.99",
+      "img": "img/merch/cayenne-sauce.jpg",
+      "description": "Everyone loves Dean’s specialty sauces and now they’re available right from our Cantina!"
+    },
+    { "name": "Dean’s T-Shirt",
+      "price": "19.99",
+      "img": "img/merch/short-sleeve.jpg",
+      "description": "You’ll love our unisex Sport-Tek Dri Fit shirts. Dean’s Hot Pepper is printed on the front; the three Parrot Amigos are printed on the back."
+    },
+    { "name": "Womens V-Neck",
+      "price": "19.99",
+      "img": "img/merch/v-neck",
+      "description": "Ladies, try our V-neck Dri Fit shirts. Dean’s Hot Pepper is printed on the front; the three Parrot Amigos are printed on the back."
+    },
+    { "name": "Dean’s Long Sleeve",
+      "price": "22.99",
+      "img": "img/merch/long-sleeve",
+      "description": "You’ll love our unisex Sport-Tek Dri Fit shirts. Dean’s Hot Pepper is printed on the front; the three Parrot Amigos are printed on the back."
+    },
+    { "name": "Dean’s Sweatshirt",
+      "price": "29.99",
+      "img": "img/merch/sweat-shirt.jpg",
+      "description": "You’ll love our unisex Jerzees Nublend, zippered hoodie. Dean’s Hot Pepper is printed on the front; the three Parrot Amigos are printed on the back."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "items":[
+    { "name": "Bean Burrito",
+      "price": "4.99",
+      "img": "img/menu/bean-burrito.jpg",
+      "description": "A Monster Burrito Black Beans, Cheese, Rice, Onions and Peppers. Served with Guacamole, Cilantro, Sour Cream, Salsa and More Black Beans."
+    },
+    { "name": "Chicken Burrito",
+      "price": "4.99",
+      "img": "img/menu/chicken-burrito.jpg",
+      "description": "A Monster Burrito With Grilled Chicken, Cheese, Rice, Onions and Peppers. Served with Guacamole, Cilantro, Sour Cream, Salsa and Black Beans."
+    },
+    { "name": "Chicken Quesadilla",
+      "price": "3.99",
+      "img": "img/menu/chicken-quesadilla.jpg",
+      "description": "Grilled Flour Tortilla Filled with Melted Cheese, Green Onions and Chiles. Garnished with Guacamole, Salsa and Sour Cream with Chicken."
+    },
+    { "name": "Hummus Quesadilla",
+      "price": "3.99",
+      "img": "img/menu/hummus-quesadilla.jpg",
+      "description": "Grilled Flour Tortilla Filled with Melted Cheese, Green Onions and Chiles. Garnished with Guacamole, Salsa and Sour Cream with Hummus."
+    },
+    { "name": "Beef Taco",
+      "price": "3.99",
+      "img": "img/menu/beef-taco.jpg",
+      "description": "Soft Corn Tortillas, 100 Percent Ground Beef, Avocado, Tomato, Chipotle Sauce, Crispy Onions and Cilantro. Served with Rice and Beans."
+    },
+    { "name": "Chicken Taco",
+      "price": "3.99",
+      "img": "img/menu/chicken-taco.jpg",
+      "description": "Soft Corn Tortillas Filled with Spicy Chicken, Cheese, Tomato, Avocado, Onion, Chipotle and Cilantro. Served with Rice and Beans."
+    },
+    { "name": "Fish Taco",
+      "price": "3.99",
+      "img": "img/menu/fish-taco.jpg",
+      "description": "Soft Corn Tortillas Filled with Grilled or Crispy Beer Battered Fish, Avocado, Tomato, Chipotle Sauce, Marinated Onions and Cilantro. Served with Rice and Beans."
+    },
+    { "name": "Pork Tamale",
+      "price": "4.99",
+      "img": "img/menu/pork-tamale.jpg",
+      "description": "Sweet Pork Wrapped With with Sour Cream, Salsa, Avocado and Salsa Verde."
+    },
+    { "name": "Turkey Tamale",
+      "price": "4.99",
+      "img": "img/menu/turkey-tamale.jpg",
+      "description": "Carved Turkey Wrapped With with Sour Cream, Salsa, Avocado and Salsa Verde."
+    },
+    { "name": "Beef Tostada",
+      "price": "5.99",
+      "img": "img/menu/beef-tostada.jpg",
+      "description": "Soft Corn Tortillas, 100 Percent Ground Beef, Fresh Squeezed, Lime Juice, Iceberg Lettuce, Guacamole, Cilantro, Sour Cream, Salsa and Black Beans. "
+    },
+    { "name": "Pork Tostada",
+      "price": "5.99",
+      "img": "img/menu/pork-tostada.jpg",
+      "description": "Soft Corn Tortillas, Chopped Pork, Fresh Squeezed, Lime Juice, Iceberg Lettuce, Guacamole, Cilantro, Sour Cream, Salsa and Black Beans. "
+    },
+    { "name": "Shrimp Tostada",
+      "price": "5.99",
+      "img": "img/menu/shrimp-tostada.jpg",
+      "description": "Soft Corn Tortillas, Gulf Shrimp, Fresh Squeezed, Lime Juice, Iceberg Lettuce, Guacamole, Cilantro, Sour Cream, Salsa and Black Beans."
+    },
+    { "name": "Loaded Nachos",
+      "price": "6.99",
+      "img": "img/menu/loaded-nachos.jpg",
+      "description": "Crisp Tortilla Chips Covered with Melted Cheese, Guacamole, Red Chile Sauce, Sour Cream, Jalapeños, Green Onions and Salsa."
+    },
+    { "name": "Taco Salad",
+      "price": "7.99",
+      "img": "img/menu/taco-salad.jpg",
+      "description": "Crisp Tortilla Bowl Covered with Melted Cheese, Guacamole, Red Chile Sauce, Sour Cream, Jalapeños, Green Onions Salasa, and Iceberg Lettuce."
+    }
+  ]
+}

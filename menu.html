@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Dean's South of the Border</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+
+<body>
+  <div class="navbar-fixed">
+    <nav role="navigation">
+      <img class="nav-wrapper" id="dean-logo-nav" src="img/DeanParrotRedone.png">
+      <div class="nav-wrapper container">
+        <a id="logo-container" href="#" class="brand-logo">
+          <img class="nav-wrapper" id="dean-name" src="img/DeansName.png">
+        </a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="merch.html">Merch</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <ul id="nav-mobile" class="side-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="merch.html">Merch</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+      </div>
+    </nav>
+  </div>
+
+  <div class="container">
+    <div class="caption center-align">
+      <h3 class="about-text">Our South Of The Border Style</h3>
+      <h5 class="about-text-lower">All Made To Order</h5>
+    </div>
+
+    <div class="col s12 m12 l12">
+      <div class="slider">
+        <ul class="slides">
+          <li>
+            <img src="https://www.forksoverknives.com/wp-content/uploads/lentiltacos-6553WP-edit.jpg"> <!-- random image -->
+            <div class="caption left-align">
+              <h5 class="slider-text">Taco Tuesday - All You Can Eat Tacos</h5>
+            </div>
+          </li>
+          <li>
+            <img src="http://pixel.nymag.com/imgs/daily/grub/2015/06/16/16-corona-beer.w710.h473.2x.jpg"> <!-- random image -->
+            <div class="caption right-align">
+              <h5 class="slider-text">Happy Hour - Weekdays After 5PM</h5>
+            </div>
+          </li>
+          <li>
+            <img src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2012/10/Food.jpg"> <!-- random image -->
+            <div class="caption left-align">
+              <h5 class="slider-text">Now Delivering - In The Local Area</h5>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="menu-items">
+
+      </div>
+
+    </div>
+  <br><br>
+  </div>
+
+  <footer class="page-footer">
+    <div class="container">
+      <div class="row center vert-color">
+        <div class="col l2 m4 s4">
+          <bold class="Site-Map-Name">Site Map</bold>
+        </div>
+          <ul class="Site-Map-Items">
+          <div class="col l2 m4 s4">
+            <li><a href="index.html">Home</a></li>
+          </div>
+          <div class="col l2 m4 s4">
+            <li><a href="menu.html">Menu</a></li>
+          </div>
+          <div class="col l2 m4 s4">
+            <li><a href="events.html">Events</a></li>
+          </div>
+          <div class="col l2 m4 s4">
+            <li><a href="merch.html">Merch</a></li>
+          </div>
+          <div class="col l2 m4 s4">
+            <li><a href="contact.html">Contact</a></li>
+          </div>
+          </ul>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col l8 m7 s6">
+            Copyright© 1996-2017 by Dean's South of the Border, Inc. All Rights Reserved.
+          </div>
+          <a target="_blank" href="https://www.facebook.com/Deanstexmex" class="login" title="Login"><img src="img/facebook.png" height="30" width="30"/></a>
+          <a target="_blank" href="https://www.instagram.com/deanssouth/" class="login" title="Login"><img src="img/instagram.png" height="30" width="30"/></a>
+          <a target="_blank" href="https://twitter.com/deansofborder" class="login" title="Login"><img src="img/twitter.png" height="30" width="30" /></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  <script>
+  getMenu();
+
+  function getMenu() {
+    $.getJSON( "js/menu.json", function( data ) {
+        console.log( "JSON Data: " + data.items[0].name);
+    })
+    // Parse data if need be, depending on parameters above - once JSON is recieved.
+    .done(function(data) {
+      writeMenuHTML(data.items);
+    });
+  }
+
+  function writeMenuHTML(items) {
+    for (let i=0; i<items.length; i++) {
+      document.getElementById("menu-items").innerHTML +=
+      '<div class="card col l4 m6 s12">'+
+        '<div class="card-image waves-effect waves-block waves-light">'+
+          '<img class="activator" src="'+items[i].img+'">'+
+        '</div>'+
+        '<div class="card-content">'+
+          '<span class="card-title activator grey-text text-darken-4">'+items[i].name+'<i class="material-icons right vert-color">more_vert</i></span>'+
+          '<p>$'+items[i].price+'</p>'+
+        '</div>'+
+        '<div class="card-reveal">'+
+          '<span class="card-title grey-text text-darken-4">'+items[i].name+'<i class="material-icons right">close</i></span>'+
+          '<p>'+items[i].description+'</p>'+
+        '</div>'+
+      '</div>';
+    }
+  }
+
+  </script>
+
+  </body>
+</html>

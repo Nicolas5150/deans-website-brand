@@ -1,0 +1,257 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+@import url('https://fonts.googleapis.com/css?family=Muli');
+
+@font-face {
+    font-family: fresca;
+    src: url("../fonts/fresca/Fresca-Regular.ttf");
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  font-family: 'fresca', sans-serif;
+  font-size: 120%;
+  font-weight: regular;
+  background-color: rgba(228,200,168,1);
+}
+
+nav li a {
+  font-family: 'fresca', sans-serif;
+  font-size: 125%;
+}
+
+nav {
+  background-color: #B7BB40;
+  background-color: rgba(211,164,110,1);
+  background-color: rgba(205,152,90,1);
+  background-color: rgba(223,137,92,1);
+  background-color: rgba(17,00,03,1);
+}
+
+nav li a{
+  color: white;
+}
+
+nav li a:hover{
+  color: #F0C28D;
+  color: #D3A46E;
+  color: rgba(223,137,92,1);
+  color: #FFCC00;
+  color: rgba(174,176,93,0.8);
+  color: rgba(217,131,36,0.8);
+  color: rgba(223,131,101,0.8);
+}
+
+#sidenav-overlay {
+  z-index: 1;
+}
+
+#logo-container {
+  color: yellow;
+}
+
+.page-footer {
+  background-color: rgba(217,129,34,1);
+  background-color: rgba(205,152,90,1);
+
+  background-color: rgba(17,00,03,1);
+}
+
+.Site-Map-Name {
+  color: #FFCC00;
+  color: white;
+}
+
+.Site-Map-Items li a {
+  color: #FFCC00;
+  color: white;
+}
+
+#dean-logo {
+  width: 20%;
+  height: auto;
+}
+
+#dean-logo-nav {
+  z-index: 1000;
+  width: 12%;
+  height: auto;
+  position: absolute;
+  top: 5px;
+  bottom: 0;
+  left: 30px;
+  right: 0;
+  text-align: center;
+}
+
+.about-text-lower {
+  color: rgba(17,00,03,.8);
+}
+
+.fullscreen img{
+  width: 101%;
+  margin-top: -145px;
+
+}
+
+.img-wrapper {
+  position: relative;
+ }
+
+.img-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.img-overlay:before {
+  content: ' ';
+  display: block;
+  /* adjust 'height' to position overlay content vertically */
+  height: 80%;
+}
+
+.btn-explore {
+  background-color: rgba(223,137,92,0.8);
+  background-color: rgba(217,131,36,0.8);
+  background-color: rgba(174,176,93,0.8);
+}
+
+.btn-explore:hover {
+  background-color: rgba(193,120,38,0.8);
+  background-color: rgba(139,149,74,0.8);
+}
+
+
+.slider-text {
+  margin-top: 175px;
+  margin-left: -40px;
+  background-color: rgba(17,00,03,0.4);
+  width: 35%;
+  padding: 20px;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, .85);
+  box-shadow: 0 1px .1px rgba(255,204,0,.7), 0 1px 1px;
+  margin-bottom: 5px;
+}
+.card .card-image {
+  padding-top: 10px;
+}
+.card .card-content p {
+    color: #de2a3c;
+    font-size: 18px;
+}
+
+.vert-color{
+  color: rgba(217,131,36,0.8);
+  color: rgba(223,131,101,0.8);
+}
+
+.vert-color ul li a{
+    color: #FFCC00;
+    color: rgba(217,131,36,0.8);
+    color: rgba(223,131,101,0.8);
+}
+
+/* label focus color */
+ .input-field input:focus + label {
+   color: black !important;
+ }
+ /* label underline focus color */
+ .row .input-field input:focus {
+   border-bottom: 1px solid rgba(217,131,36,0.8) !important;
+   box-shadow: 0 1px 0 0 rgba(217,131,36,0.8) !important
+ }
+
+ textarea.materialize-textarea:focus {
+   color: #FFCC00 !important;
+   border-bottom: 1px solid rgba(217,131,36,0.8) !important;
+ }
+
+ textarea.materialize-textarea:active {
+   color: rgba(217,131,36,0.8) !important;
+ }
+
+.btn-cart{
+  width: 100%;
+}
+#map {
+  width: 100%;
+  height: 500px;
+}
+.modal.bottom-sheet {
+  min-height: 45%;
+}
+
+#dean-name {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  #dean-logo-nav {
+    display: none;
+  }
+  #dean-name {
+    display: block;
+    width: 65%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5px;
+  }
+  #dean-logo {
+    width: 40%;
+    height: auto;
+  }
+  .fullscreen img{
+    padding-top: 140px;
+  }
+
+  .slider-text {
+    width: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  .fullscreen img{
+    padding-top: 140px;
+  }
+  #dean-logo {
+    width: 50%;
+    height: auto;
+  }
+  .slider-text {
+    width: 70%;
+  }
+}
+
+@media (max-width: 500px) {
+  .btn-large {
+    width: 100%;
+    background-color: rgba(174,176,93,1);
+  }
+  .btn-explore:hover {
+    background-color: rgba(139,149,74,1);
+  }
+}
